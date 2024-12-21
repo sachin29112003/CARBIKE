@@ -1,0 +1,1640 @@
+<!-- resources/views/home.blade.php -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Mirrored from www.topgearmag.in/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 12 Oct 2024 09:18:41 GMT -->
+  <!-- Added by HTTrack --><meta
+    http-equiv="content-type"
+    content="text/html;charset=UTF-8"
+  /><!-- /Added by HTTrack -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latest Car &amp; Bike News &amp; Reviews</title>
+
+    <!-- Bootstrap CDN -->
+    <link
+      rel="stylesheet"
+      href="../cdn.jsdelivr.net/npm/bootstrap%405.0.2/dist/css/bootstrap.min.css"
+    />
+    <link
+      href="../cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link href="assets/img/favicon.html" rel="icon" />
+    <style>
+      /* Show the first-level dropdown on hover */
+      .navbar-nav .dropdown:hover > .dropdown-menu {
+        display: block;
+      }
+
+      /* Hide second-level dropdowns initially */
+      .kjmulti-dropdown .dropdown-menu {
+        display: none;
+        position: absolute;
+        left: 100%; /* Position it to the right of the parent menu */
+        top: 0;
+        margin-top: 0;
+      }
+
+      /* Show second-level dropdown when active */
+      .kjmulti-dropdown.active .dropdown-menu {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "../www.googletagmanager.com/gtm5445.html?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-T8HPTBK");
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-163299555-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-163299555-1");
+    </script>
+
+    <!-- resources/views/layouts/header.blade.php -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="tg-header-banner">
+        <div class="kjgearstripes-wrap">
+          <div class="tg-stripes"></div>
+          <div class="tg-gear-wrap">
+            <img src="assets/imgs/large-gear.png" width="165" />
+          </div>
+        </div>
+        <div class="tg-brand-wrap"></div>
+        <div class="container">
+          <a class="navbar-brand" href="index.html"
+            ><img
+              src="assets/imgs/tg-logo-white.png"
+              width="450"
+              alt="TurboTales"
+          /></a>
+        </div>
+      </div>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbar-menu"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="tg-nav-container">
+        <div class="container">
+          <div
+            class="collapse navbar-collapse justify-content-between"
+            id="navbar-menu"
+          >
+            <ul class="navbar-nav mb-2">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="Reviews"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Reviews
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="Reviews">
+                  <!--<li class="kjmulti-dropdown nav-item dropdown">-->
+                  <li class="kjmulti-dropdown nav-item dropdown">
+                    <a
+                      class="dropdown-item dropdown-toggle"
+                      href="cars.html"
+                      data-bs-toggle="dropdown"
+                    >
+                      Cars
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="/www.topgearmag.in/reviews/cars/comparison.html"
+                        >
+                          Comparison
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="/www.topgearmag.in/reviews/cars/road-test.html"
+                        >
+                          Road Test
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <!--<li class="kjmulti-dropdown nav-item dropdown">-->
+                  <li class="kjmulti-dropdown nav-item dropdown">
+                    <a
+                      class="dropdown-item dropdown-toggle"
+                      href="../../bike-scooters.html"
+                      data-bs-toggle="dropdown"
+                    >
+                      Bikes/Scooters
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="/www.topgearmag.in/reviews/bike-scooters/comparison.html"
+                        >
+                          Comparison
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="/www.topgearmag.in/reviews/bike-scooters/road-test.html"
+                        >
+                          Road Test
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="News"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  News
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="News">
+                  <!--<li class="kjmulti-dropdown nav-item dropdown">-->
+                  <li class="kjmulti-dropdown nav-item dropdown">
+                    <a class="dropdown-item" href="#"> BIKES </a>
+                  </li>
+                  <!--<li class="kjmulti-dropdown nav-item dropdown">-->
+                  <li class="kjmulti-dropdown nav-item dropdown">
+                    <a class="dropdown-item" href="#"> LAUNCHES </a>
+                  </li>
+                  <!--<li class="kjmulti-dropdown nav-item dropdown">-->
+                  <li class="kjmulti-dropdown nav-item dropdown">
+                    <a class="dropdown-item" href="#"> MOTORSPORT </a>
+                  </li>
+                  <!--<li class="kjmulti-dropdown nav-item dropdown">-->
+                  <li class="kjmulti-dropdown nav-item dropdown">
+                    <a class="dropdown-item" href="#"> INDUSTRY </a>
+                  </li>
+                  <!--<li class="kjmulti-dropdown nav-item dropdown">-->
+                  <li class="kjmulti-dropdown nav-item dropdown">
+                    <a class="dropdown-item" href="#"> OTHERS </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="Features"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Features
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="Features">
+                  <li>
+                    <a class="dropdown-item" href="#"> Blogs </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"> Travelogues </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"> Interviews </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"> Special Features </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  href="electric.html"
+                  id="Electric"
+                  role="button"
+                  aria-expanded="false"
+                >
+                  Electric
+                </a>
+              </li>
+            </ul>
+            <div class="nav-search">
+              <button class="tg-search">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  width="20"
+                  height="20"
+                  data-testid="SvgGelIconSearch"
+                >
+                  <path
+                    d="M13 24.3c6.5 0 11.7-5.1 11.7-11.7S19.6 1 13 1 1.4 6.1 1.4 12.7 6.5 24.3 13 24.3zm0-2.6c-5.1 0-9-3.9-9-9.1s3.9-9.1 9-9.1 9 3.9 9 9.1-3.9 9.1-9 9.1zm5.8.4l8.9 8.9 2.9-2.9-8.9-8.9-2.9 2.9z"
+                    stroke="none"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container tg-dropdown-wrap"></div>
+    <h1 class="d-none">Car and Bike Reviews, News & Auto Magazine in India</h1>
+    <div class="container">
+      <div
+        class="hero-slider carousel slide pointer-event"
+        data-bs-ride="carousel"
+        id="carouselExampleIndicators"
+      >
+        <div class="carousel-inner">
+          <!-- Variable to track the first item -->
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-lg-8">
+                <a href="#">
+                  <img
+                    alt="1728646762-Untit"
+                    class="w-100"
+                    src="uploads/Newsthumb/Image/1728646762-Untitled%20design.jpg"
+                  />
+                </a>
+              </div>
+              <div class="col-lg-4">
+                <div class="caption">
+                  <a href="news/launches.html" class="tgnews-tag">LAUNCHES</a>
+                  <h2 class="tg-review-title">
+                    <a href="#">
+                      A Rs 14 Crore Hypercar with Swappable Powertrains
+                    </a>
+                  </h2>
+                  <span class="tg-article-date">October 11, 2024</span>
+                  <p><a href="#">Learn More</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Set the first item to false after the first iteration -->
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-lg-8">
+                <a href="#">
+                  <img
+                    alt="17"
+                    class="w-100"
+                    src="uploads/Newsthumb/Image/1728627943-1.jpg"
+                  />
+                </a>
+              </div>
+              <div class="col-lg-4">
+                <div class="caption">
+                  <a href="news/motorsport.html" class="tgnews-tag"
+                    >MOTORSPORTS</a
+                  >
+                  <h2 class="tg-review-title">
+                    <a
+                      href="news/motorsport/hot-wheels-partners-with-formula-1.html"
+                    >
+                      Hot Wheels Partners with Formula 1
+                    </a>
+                  </h2>
+                  <span class="tg-article-date">October 11, 2024</span>
+                  <p>
+                    <a
+                      href="news/motorsport/hot-wheels-partners-with-formula-1.html"
+                      >Learn More</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Set the first item to false after the first iteration -->
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-lg-8">
+                <a
+                  href="news/launches/lexus-introduces-the-lx-700h-hybrid.html"
+                >
+                  <img
+                    alt="1728"
+                    class="w-100"
+                    src="uploads/Newsthumb/Image/1728642040-001.jpg"
+                  />
+                </a>
+              </div>
+              <div class="col-lg-4">
+                <div class="caption">
+                  <a href="news/launches.html" class="tgnews-tag">LAUNCHES</a>
+                  <h2 class="tg-review-title">
+                    <a
+                      href="news/launches/lexus-introduces-the-lx-700h-hybrid.html"
+                    >
+                      Lexus Introduces the LX 700h Hybrid
+                    </a>
+                  </h2>
+                  <span class="tg-article-date">October 11, 2024</span>
+                  <p>
+                    <a
+                      href="news/launches/lexus-introduces-the-lx-700h-hybrid.html"
+                      >Learn More</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Set the first item to false after the first iteration -->
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-lg-8">
+                <a href="news/motorsport/toyota-returns-to-f1.html">
+                  <img
+                    alt="172"
+                    class="w-100"
+                    src="uploads/Newsthumb/Image/1728644891-11.jpg"
+                  />
+                </a>
+              </div>
+              <div class="col-lg-4">
+                <div class="caption">
+                  <a href="news/motorsport.html" class="tgnews-tag"
+                    >MOTORSPORTS</a
+                  >
+                  <h2 class="tg-review-title">
+                    <a href="news/motorsport/toyota-returns-to-f1.html">
+                      Toyota Returns to F1
+                    </a>
+                  </h2>
+                  <span class="tg-article-date">October 11, 2024</span>
+                  <p>
+                    <a href="news/motorsport/toyota-returns-to-f1.html"
+                      >Learn More</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Set the first item to false after the first iteration -->
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-lg-8">
+                <a
+                  href="news/launches/volkswagen-tayron-unveiled-as-tiguan-allspace-successor.html"
+                >
+                  <img
+                    alt="17"
+                    class="w-100"
+                    src="uploads/Newsthumb/Image/1728624680-1.jpg"
+                  />
+                </a>
+              </div>
+              <div class="col-lg-4">
+                <div class="caption">
+                  <a href="news/launches.html" class="tgnews-tag">LAUNCHES</a>
+                  <h2 class="tg-review-title">
+                    <a
+                      href="news/launches/volkswagen-tayron-unveiled-as-tiguan-allspace-successor.html"
+                    >
+                      Volkswagen Tayron Unveiled as Tiguan Allspace Successor
+                    </a>
+                  </h2>
+                  <span class="tg-article-date">October 11, 2024</span>
+                  <p>
+                    <a
+                      href="news/launches/volkswagen-tayron-unveiled-as-tiguan-allspace-successor.html"
+                      >Learn More</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Set the first item to false after the first iteration -->
+
+          <!-- Custom Banner -->
+          <div class="carousel-item">
+            <img
+              alt="TopGear India Magazine September 2024"
+              class="d-block w-100"
+              src="uploads/Banners/tgbanner-oct2024.png"
+            />
+            <div class="caption tg-magazine">
+              <p class="text-center">
+                <a href="https://www.exhibitstore.in/" target="_blank"
+                  >Buy Now</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slider Controls -->
+        <button
+          class="carousel-control-prev"
+          data-bs-slide="prev"
+          data-bs-target="#carouselExampleIndicators"
+          type="button"
+        >
+          <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          data-bs-slide="next"
+          data-bs-target="#carouselExampleIndicators"
+          type="button"
+        >
+          <span aria-hidden="true" class="carousel-control-next-icon"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <section class="tg-reviews-latest">
+      <div class="container">
+        <div class="row">
+          <div class="tgsection-title">
+            <h2>LATEST NEWS</h2>
+          </div>
+          <div class="col-lg-4">
+            <div class="kjwrap tg-article-item">
+              <div class="tg-media">
+                <a class="d-block" href="#">
+                  <img
+                    src="uploads/Newsthumb/Image/1728646762-Untitled%20design.jpg"
+                    alt="1728646762-Untitled "
+                  />
+                </a>
+              </div>
+              <div class="tg-txt">
+                <a class="tg-review-tag" href="#">LAUNCHES</a>
+                <h2 class="tg-review-title">
+                  <a href="#"
+                    >A Rs 14 Crore Hypercar with Swappable Powertrains...</a
+                  >
+                </h2>
+                <span class="tg-tooltip"
+                  >A Rs 14 Crore Hypercar with Swappable Powertrains</span
+                >
+                <span class="tg-author"
+                  ><a href="author/Saneet%20Dsilva.html">Saneet Dsilva</a></span
+                >
+                -
+                <span class="tg-article-date">October 11, 2024</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="kjwrap tg-article-item">
+              <div class="tg-media">
+                <a
+                  class="d-block"
+                  href="news/motorsport/hot-wheels-partners-with-formula-1.html"
+                >
+                  <img
+                    src="uploads/Newsthumb/Image/1728627943-1.jpg"
+                    alt="17"
+                  />
+                </a>
+              </div>
+              <div class="tg-txt">
+                <a class="tg-review-tag" href="#">MOTORSPORTS</a>
+                <h2 class="tg-review-title">
+                  <a href="#">Hot Wheels Partners with Formula 1...</a>
+                </h2>
+                <span class="tg-tooltip"
+                  >Hot Wheels Partners with Formula 1</span
+                >
+                <span class="tg-author"><a href="#">Saneet Dsilva</a></span> -
+                <span class="tg-article-date">October 11, 2024</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="kjwrap tg-article-item">
+              <div class="tg-media">
+                <a class="d-block" href="#">
+                  <img
+                    src="uploads/Newsthumb/Image/1728642040-001.jpg"
+                    alt="1728"
+                  />
+                </a>
+              </div>
+              <div class="tg-txt">
+                <a class="tg-review-tag" href="#">LAUNCHES</a>
+                <h2 class="tg-review-title">
+                  <a href="#">Lexus Introduces the LX 700h Hybrid...</a>
+                </h2>
+                <span class="tg-tooltip"
+                  >Lexus Introduces the LX 700h Hybrid</span
+                >
+                <span class="tg-author"><a href="#">Saneet Dsilva</a></span> -
+                <span class="tg-article-date">October 11, 2024</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="kjwrap tg-article-item">
+              <div class="tg-media">
+                <a
+                  class="d-block"
+                  href="news/motorsport/toyota-returns-to-f1.html"
+                >
+                  <img
+                    src="uploads/Newsthumb/Image/1728644891-11.jpg"
+                    alt="17"
+                  />
+                </a>
+              </div>
+              <div class="tg-txt">
+                <a class="tg-review-tag" href="#">MOTORSPORTS</a>
+                <h2 class="tg-review-title">
+                  <a href="#">Toyota Returns to F1...</a>
+                </h2>
+                <span class="tg-tooltip">Toyota Returns to F1</span>
+                <span class="tg-author"><a href="#">Saneet Dsilva</a></span> -
+                <span class="tg-article-date">October 11, 2024</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="kjwrap tg-article-item">
+              <div class="tg-media">
+                <a class="d-block" href="#">
+                  <img
+                    src="uploads/Newsthumb/Image/1728624680-1.jpg"
+                    alt="17"
+                  />
+                </a>
+              </div>
+              <div class="tg-txt">
+                <a class="tg-review-tag" href="news/launches.html">LAUNCHES</a>
+                <h2 class="tg-review-title">
+                  <a href="#"
+                    >Volkswagen Tayron Unveiled as Tiguan Allspace
+                    Successor...</a
+                  >
+                </h2>
+                <span class="tg-tooltip"
+                  >Volkswagen Tayron Unveiled as Tiguan Allspace Successor</span
+                >
+                <span class="tg-author"><a href="#">Saneet Dsilva</a></span> -
+                <span class="tg-article-date">October 11, 2024</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="kjwrap tg-article-item">
+              <div class="tg-media">
+                <a class="d-block" href="#">
+                  <img
+                    src="uploads/Newsthumb/Image/1728547691-WhatsApp%20Image%202024-10-08%20at%2018.18.19_cfc61602.jpg"
+                    alt="1728547691-WhatsApp Image 2024-10-08 At 18.18.1"
+                  />
+                </a>
+              </div>
+              <div class="tg-txt">
+                <a class="tg-review-tag" href="#">LAUNCHES</a>
+                <h2 class="tg-review-title">
+                  <a href="#">BYD India Launches the eMax 7 MPV...</a>
+                </h2>
+                <span class="tg-tooltip"
+                  >BYD India Launches the eMax 7 MPV</span
+                >
+                <span class="tg-author"
+                  ><a href="author/Saneet%20Dsilva.html">Saneet Dsilva</a></span
+                >
+                -
+                <span class="tg-article-date">October 9, 2024</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="kjwrap tg-article-item">
+              <div class="tg-media">
+                <a class="d-block" href="#">
+                  <img
+                    src="uploads/Newsthumb/Image/1728554332-WhatsApp%20Image%202024-10-04%20at%2018.20.58_a002b483.jpg"
+                    alt="1728554303-2024 Nissan "
+                  />
+                </a>
+              </div>
+              <div class="tg-txt">
+                <a class="tg-review-tag" href="#">LAUNCHES</a>
+                <h2 class="tg-review-title">
+                  <a href="#"
+                    >Nissan Magnite Facelift Launched: What’s New?...</a
+                  >
+                </h2>
+                <span class="tg-tooltip"
+                  >Nissan Magnite Facelift Launched: What’s New?</span
+                >
+                <span class="tg-author"><a href="#">Saneet Dsilva</a></span> -
+                <span class="tg-article-date">October 9, 2024</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="kjwrap tg-article-item">
+              <div class="tg-media">
+                <a class="d-block" href="#">
+                  <img
+                    src="uploads/Newsthumb/Image/1728467455-Untitled%202.jpg"
+                    alt="1728467455-"
+                  />
+                </a>
+              </div>
+              <div class="tg-txt">
+                <a class="tg-review-tag" href="#">MOTORSPORTS</a>
+                <h2 class="tg-review-title">
+                  <a href="#"
+                    >MotoGP Star Enea Bastianini Takes a Spin in
+                    Rallylegend...</a
+                  >
+                </h2>
+                <span class="tg-tooltip"
+                  >MotoGP Star Enea Bastianini Takes a Spin in Rallylegend</span
+                >
+                <span class="tg-author"><a href="#">Akaash Bhadra</a></span> -
+                <span class="tg-article-date">October 9, 2024</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="tg-reviews-latest">
+      <div class="container">
+        <div class="row">
+          <div class="tgsection-title">
+            <h2>LATEST REVIEWS</h2>
+          </div>
+          <div class="col-lg-4">
+            <div class="kjwrap tg-article-item">
+              <div class="tg-media">
+                <a
+                  class="d-block"
+                  href="reviews/cars/first-drive/2024-audi-q8-facelift.html"
+                >
+                  <img
+                    src="uploads/Reviews/Image/1728126839-audiQ81.jpg"
+                    alt="17281268"
+                  />
+                </a>
+              </div>
+              <div class="tg-txt">
+                <a class="tg-review-tag" href="reviews/cars/first-drive.html"
+                  >FIRST DRIVE</a
+                >
+                <h2 class="tg-review-title">
+                  <a href="reviews/cars/first-drive/2024-audi-q8-facelift.html"
+                    >2024 Audi Q8 Facelift...</a
+                  >
+                </h2>
+                <span class="tg-tooltip">2024 Audi Q8 Facelift</span>
+                <span class="tg-author"
+                  ><a href="author/Saneet%20Dsilva.html">Saneet Dsilva</a></span
+                >
+                -
+                <span class="tg-article-date">October 5, 2024</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="kjwrap tg-article-item">
+              <div class="tg-media">
+                <a
+                  class="d-block"
+                  href="reviews/cars/first-drive/hyundai-alcazar-facelift-more-than-just-extra-seats-and-treats.html"
+                >
+                  <img
+                    src="uploads/Reviews/Image/1728118997-Hyundai%20Alcazar%20engine.jpg"
+                    alt="1728118997-Hyundai Alca"
+                  />
+                </a>
+              </div>
+              <div class="tg-txt">
+                <a class="tg-review-tag" href="reviews/cars/first-drive.html"
+                  >FIRST DRIVE</a
+                >
+                <h2 class="tg-review-title">
+                  <a href="#"
+                    >Hyundai Alcazar facelift | More than just extra seats and
+                    treats!...</a
+                  >
+                </h2>
+                <span class="tg-tooltip"
+                  >Hyundai Alcazar facelift | More than just extra seats and
+                  treats!</span
+                >
+                <span class="tg-author"
+                  ><a href="author/Saneet%20Dsilva.html">Saneet Dsilva</a></span
+                >
+                -
+                <span class="tg-article-date">October 5, 2024</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="kjwrap tg-article-item">
+              <div class="tg-media">
+                <a
+                  class="d-block"
+                  href="reviews/cars/first-drive/2024-mercedes-benz-c-300-amg-line-first-drive-review.html"
+                >
+                  <img
+                    src="uploads/Reviews/Image/reviews_mercedesbenzc3001jpg1724327753.jpg"
+                    alt="Mercedesbenzc3001jpg"
+                  />
+                </a>
+              </div>
+              <div class="tg-txt">
+                <a class="tg-review-tag" href="reviews/cars/first-drive.html"
+                  >FIRST DRIVE</a
+                >
+                <h2 class="tg-review-title">
+                  <a
+                    href="reviews/cars/first-drive/2024-mercedes-benz-c-300-amg-line-first-drive-review.html"
+                    >2024 Mercedes-Benz C 300 AMG Line: First Drive Review...</a
+                  >
+                </h2>
+                <span class="tg-tooltip"
+                  >2024 Mercedes-Benz C 300 AMG Line: First Drive Review</span
+                >
+                <span class="tg-author"
+                  ><a href="author/Saneet%20Dsilva.html">Saneet Dsilva</a></span
+                >
+                -
+                <span class="tg-article-date">August 22, 2024</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="kjwrap tg-article-item">
+              <div class="tg-media">
+                <a
+                  class="d-block"
+                  href="reviews/cars/first-drive/citroen-basalt-a-french-twist-on-the-suv.html"
+                >
+                  <img
+                    src="uploads/Reviews/Image/reviews_basalt_action_5jpg1723181808.jpg"
+                    alt="Basalt Action 5jpg"
+                  />
+                </a>
+              </div>
+              <div class="tg-txt">
+                <a class="tg-review-tag" href="reviews/cars/first-drive.html"
+                  >FIRST DRIVE</a
+                >
+                <h2 class="tg-review-title">
+                  <a
+                    href="reviews/cars/first-drive/citroen-basalt-a-french-twist-on-the-suv.html"
+                    >Citroen Basalt | A French Twist on the SUV?...</a
+                  >
+                </h2>
+                <span class="tg-tooltip"
+                  >Citroen Basalt | A French Twist on the SUV?</span
+                >
+                <span class="tg-author"
+                  ><a href="author/Saneet%20Dsilva.html">Saneet Dsilva</a></span
+                >
+                -
+                <span class="tg-article-date">August 9, 2024</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="kjwrap tg-article-item">
+              <div class="tg-media">
+                <a
+                  class="d-block"
+                  href="reviews/cars/first-drive/2024-mercedes-amg-glc-43-coupe-gt-on-stilts.html"
+                >
+                  <img
+                    src="uploads/Reviews/Image/reviews_mercedes-amg_glc_coupe_1_frontjpg1722920053.jpg"
+                    alt="Mercedes-amg Glc Coupe 1 Frontjpg"
+                  />
+                </a>
+              </div>
+              <div class="tg-txt">
+                <a class="tg-review-tag" href="reviews/cars/first-drive.html"
+                  >FIRST DRIVE</a
+                >
+                <h2 class="tg-review-title">
+                  <a
+                    href="reviews/cars/first-drive/2024-mercedes-amg-glc-43-coupe-gt-on-stilts.html"
+                    >2024 Mercedes-AMG GLC 43 Coupe | GT on Stilts...</a
+                  >
+                </h2>
+                <span class="tg-tooltip"
+                  >2024 Mercedes-AMG GLC 43 Coupe | GT on Stilts</span
+                >
+                <span class="tg-author"
+                  ><a href="author/Saneet%20Dsilva.html">Saneet Dsilva</a></span
+                >
+                -
+                <span class="tg-article-date">August 6, 2024</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="kjwrap tg-article-item">
+              <div class="tg-media">
+                <a
+                  class="d-block"
+                  href="reviews/cars/first-drive/behind-the-wheels-of-the-skoda-octavia-facelift-first-drive-review.html"
+                >
+                  <img
+                    src="uploads/Reviews/Image/reviews_skoda-octaviajpg1722578792.jpg"
+                    alt="Skoda-octaviajpg"
+                  />
+                </a>
+              </div>
+              <div class="tg-txt">
+                <a class="tg-review-tag" href="reviews/cars/first-drive.html"
+                  >FIRST DRIVE</a
+                >
+                <h2 class="tg-review-title">
+                  <a
+                    href="reviews/cars/first-drive/behind-the-wheels-of-the-skoda-octavia-facelift-first-drive-review.html"
+                    >Behind the wheels of the Skoda Octavia Facelift | First
+                    Drive Rev...</a
+                  >
+                </h2>
+                <span class="tg-tooltip"
+                  >Behind the wheels of the Skoda Octavia Facelift | First Drive
+                  Review</span
+                >
+                <span class="tg-author"
+                  ><a href="author/Mira%20Erda.html">Mira Erda</a></span
+                >
+                -
+                <span class="tg-article-date">August 2, 2024</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="kjwrap tg-article-item">
+              <div class="tg-media">
+                <a
+                  class="d-block"
+                  href="reviews/bike-scooters/first-ride/guerrilla-450-first-ride-review-guerrilla-warfare.html"
+                >
+                  <img
+                    src="uploads/Reviews/Image/reviews_royalenfield_guerilla450-frontjpg1722019641.jpg"
+                    alt="Royalenfield Guerilla450-frontjpg"
+                  />
+                </a>
+              </div>
+              <div class="tg-txt">
+                <a
+                  class="tg-review-tag"
+                  href="reviews/bike-scooters/first-ride.html"
+                  >FIRST RIDE</a
+                >
+                <h2 class="tg-review-title">
+                  <a
+                    href="reviews/bike-scooters/first-ride/guerrilla-450-first-ride-review-guerrilla-warfare.html"
+                    >Guerrilla 450 First Ride Review | Guerrilla Warfare...</a
+                  >
+                </h2>
+                <span class="tg-tooltip"
+                  >Guerrilla 450 First Ride Review | Guerrilla Warfare</span
+                >
+                <span class="tg-author"
+                  ><a href="author/Ramesh%20Somani.html">Ramesh Somani</a></span
+                >
+                -
+                <span class="tg-article-date">July 27, 2024</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="kjwrap tg-article-item">
+              <div class="tg-media">
+                <a
+                  class="d-block"
+                  href="reviews/cars/first-drive/nissan-x-trail-india-review-can-it-re-establish-nissans-supremacy.html"
+                >
+                  <img
+                    src="uploads/Reviews/Image/reviews_nissan_x-trailjpg1721708697.jpg"
+                    alt="Nissan X-trailjpg"
+                  />
+                </a>
+              </div>
+              <div class="tg-txt">
+                <a class="tg-review-tag" href="reviews/cars/first-drive.html"
+                  >FIRST DRIVE</a
+                >
+                <h2 class="tg-review-title">
+                  <a
+                    href="reviews/cars/first-drive/nissan-x-trail-india-review-can-it-re-establish-nissans-supremacy.html"
+                    >Nissan X-Trail India Review | Can It Re-establish
+                    Nissan&#039;s Suprem...</a
+                  >
+                </h2>
+                <span class="tg-tooltip"
+                  >Nissan X-Trail India Review | Can It Re-establish
+                  Nissan&#039;s Supremacy?
+                </span>
+                <span class="tg-author"
+                  ><a href="author/Vipul%20Punetha.html">Vipul Punetha</a></span
+                >
+                -
+                <span class="tg-article-date">July 23, 2024</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="kjwrap tg-article-item">
+              <div class="tg-media">
+                <a
+                  class="d-block"
+                  href="reviews/bike-scooters/comparison/the-cheapest-400cc-war-hero-mavrick-440-vs-pulsar-ns400z.html"
+                >
+                  <img
+                    src="uploads/Reviews/Image/reviews_1jpg1721208207.jpg"
+                    alt="1jpg"
+                  />
+                </a>
+              </div>
+              <div class="tg-txt">
+                <a
+                  class="tg-review-tag"
+                  href="reviews/bike-scooters/comparison.html"
+                  >COMPARISON</a
+                >
+                <h2 class="tg-review-title">
+                  <a
+                    href="reviews/bike-scooters/comparison/the-cheapest-400cc-war-hero-mavrick-440-vs-pulsar-ns400z.html"
+                    >The Cheapest 400cc War | Hero Mavrick 440 Vs Pulsar
+                    NS400Z...</a
+                  >
+                </h2>
+                <span class="tg-tooltip"
+                  >The Cheapest 400cc War | Hero Mavrick 440 Vs Pulsar
+                  NS400Z</span
+                >
+                <span class="tg-author"
+                  ><a href="author/Akaash%20Bhadra.html">Akaash Bhadra</a></span
+                >
+                -
+                <span class="tg-article-date">July 17, 2024</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="trending">
+      <div class="container">
+        <div class="tg-trending row">
+          <div class="tgsection-title">
+            <h2>TRENDING THIS MONTH</h2>
+          </div>
+
+          <div class="col-lg-6 kjtrending">
+            <div class="tg-number"></div>
+            <div class="">
+              <a class="tg-review-tag" href="news/launches.html">Launches</a>
+              <h2 class="tg-review-title">
+                <a
+                  href="news/launches/baas-program-added-to-mg-comet-and-zs-ev.html"
+                  >BaaS Program Added to MG Comet and ZS EV</a
+                >
+              </h2>
+            </div>
+          </div>
+
+          <div class="col-lg-6 kjtrending">
+            <div class="tg-number"></div>
+            <div class="">
+              <a class="tg-review-tag" href="news/launches.html">Launches</a>
+              <h2 class="tg-review-title">
+                <a
+                  href="news/launches/all-you-need-to-know-about-mg-windsor-battery-rental.html"
+                  >All You Need To Know About MG Windsor Battery Rental!</a
+                >
+              </h2>
+            </div>
+          </div>
+
+          <div class="col-lg-6 kjtrending">
+            <div class="tg-number"></div>
+            <div class="">
+              <a class="tg-review-tag" href="electric/industry.html"
+                >Industry</a
+              >
+              <h2 class="tg-review-title">
+                <a
+                  href="electric/industry/ford-is-returning-to-india-but-you-cant-buy-a-new-ford-car-yet.html"
+                  >Ford Is Returning To India, But You cant Buy A New Ford Car
+                  Yet</a
+                >
+              </h2>
+            </div>
+          </div>
+
+          <div class="col-lg-6 kjtrending">
+            <div class="tg-number"></div>
+            <div class="">
+              <a class="tg-review-tag" href="news/launches.html">Launches</a>
+              <h2 class="tg-review-title">
+                <a
+                  href="news/launches/mg-windsor-ev-review-a-new-era-of-electric-ownership.html"
+                  >MG Windsor EV Review: A New Era of Electric Ownership</a
+                >
+              </h2>
+            </div>
+          </div>
+
+          <div class="col-lg-6 kjtrending">
+            <div class="tg-number"></div>
+            <div class="">
+              <a class="tg-review-tag" href="news/others.html">Others</a>
+              <h2 class="tg-review-title">
+                <a
+                  href="news/others/lego-technic-fast-furious-toyota-supra-mk4-a-must-have-for-fans.html"
+                  >Lego Technic Fast &amp; Furious Toyota Supra MK4: A Must-Have
+                  for Fan</a
+                >
+              </h2>
+            </div>
+          </div>
+
+          <div class="col-lg-6 kjtrending">
+            <div class="tg-number"></div>
+            <div class="">
+              <a class="tg-review-tag" href="news/industry.html">Industry</a>
+              <h2 class="tg-review-title">
+                <a
+                  href="news/industry/china-becomes-first-country-to-hit-1-million-ev-sales-in-a-month.html"
+                  >China Becomes First Country to Hit 1 Million EV Sales in a
+                  Month</a
+                >
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- More sections as needed -->
+    <section class="tg-reviews-latest kjads-wrap">
+      <div class="container">
+        <div class="row">
+          <div class="tgsection-title">
+            <h2>LATEST FEATURES</h2>
+          </div>
+          <div class="col-lg-4">
+            <div class="kjwrap tg-article-item">
+              <div class="tg-media">
+                <a
+                  class="d-block"
+                  href="features/blogs/maruti-suzuki-jimny-the-compact-suv-thats-big-on-adventure.html"
+                >
+                  <img
+                    src="uploads/Featuresthumb/Image/1727958501-maruti-suzuki-jimny-black.jpg"
+                    alt="1727958501-maruti-suzuki-j"
+                  />
+                </a>
+              </div>
+              <div class="tg-txt">
+                <a class="tg-review-tag" href="features/blogs.html">BLOGS</a>
+                <h2 class="tg-review-title">
+                  <a
+                    href="features/blogs/maruti-suzuki-jimny-the-compact-suv-thats-big-on-adventure.html"
+                    >Maruti Suzuki Jimny: The Compact SUV That’s Big on
+                    Adventure...</a
+                  >
+                </h2>
+                <span class="tg-tooltip"
+                  >Maruti Suzuki Jimny: The Compact SUV That’s Big on
+                  Adventure</span
+                >
+                <span class="tg-author"
+                  ><a href="author/TopGear%20Staff.html">TopGear Staff</a></span
+                >
+                -
+                <span class="tg-article-date">October 3, 2024</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="kjwrap tg-article-item">
+              <div class="tg-media">
+                <a
+                  class="d-block"
+                  href="features/blogs/hyundai-verna-the-sedan-thats-all-about-performance-and-comfort.html"
+                >
+                  <img
+                    src="uploads/Featuresthumb/Image/1727961867-hyundai-verna.jpg"
+                    alt="1727961867-hyu"
+                  />
+                </a>
+              </div>
+              <div class="tg-txt">
+                <a class="tg-review-tag" href="features/blogs.html">BLOGS</a>
+                <h2 class="tg-review-title">
+                  <a
+                    href="features/blogs/hyundai-verna-the-sedan-thats-all-about-performance-and-comfort.html"
+                    >Hyundai Verna: The Sedan That’s All About Performance and
+                    Comfo...</a
+                  >
+                </h2>
+                <span class="tg-tooltip"
+                  >Hyundai Verna: The Sedan That’s All About Performance and
+                  Comfort</span
+                >
+                <span class="tg-author"
+                  ><a href="author/TopGear%20Staff.html">TopGear Staff</a></span
+                >
+                -
+                <span class="tg-article-date">October 3, 2024</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="kjwrap tg-article-item">
+              <div class="tg-media">
+                <a
+                  class="d-block"
+                  href="features/blogs/wheels-on-reels-cool-ideas-for-shooting-insta-ready-car-videos.html"
+                >
+                  <img
+                    src="uploads/Featuresthumb/Image/1728281924-Ideas%20For%20Shooting%20Insta-Ready%20Car%20Videos.png"
+                    alt="1728281924-Ideas For Shooting Insta-Ready "
+                  />
+                </a>
+              </div>
+              <div class="tg-txt">
+                <a class="tg-review-tag" href="features/blogs.html">BLOGS</a>
+                <h2 class="tg-review-title">
+                  <a
+                    href="features/blogs/wheels-on-reels-cool-ideas-for-shooting-insta-ready-car-videos.html"
+                    >Wheels On Reels: Cool Ideas For Shooting Insta-Ready Car
+                    Videos...</a
+                  >
+                </h2>
+                <span class="tg-tooltip"
+                  >Wheels On Reels: Cool Ideas For Shooting Insta-Ready Car
+                  Videos</span
+                >
+                <span class="tg-author"
+                  ><a href="author/TopGear%20Staff.html">TopGear Staff</a></span
+                >
+                -
+                <span class="tg-article-date">September 3, 2024</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="kjwrap tg-article-item">
+              <div class="tg-media">
+                <a
+                  class="d-block"
+                  href="features/special-features/the-perfect-recipe-for-kari-ft-eurogrip.html"
+                >
+                  <img
+                    src="uploads/Featuresthumb/Image/featuresthumb_the_perfect_recipe_for_kari_ft_eurogrip1725017357.jpg"
+                    alt="The Perfect Recipe For Kari Ft Eurogrip"
+                  />
+                </a>
+              </div>
+              <div class="tg-txt">
+                <a class="tg-review-tag" href="features/special-features.html"
+                  >SPECIAL FEATURES</a
+                >
+                <h2 class="tg-review-title">
+                  <a
+                    href="features/special-features/the-perfect-recipe-for-kari-ft-eurogrip.html"
+                    >The perfect recipe for Kari ft. EuroGrip ...</a
+                  >
+                </h2>
+                <span class="tg-tooltip"
+                  >The perfect recipe for Kari ft. EuroGrip
+                </span>
+                <span class="tg-author"
+                  ><a href="author/Akaash%20Bhadra.html">Akaash Bhadra</a></span
+                >
+                -
+                <span class="tg-article-date">August 30, 2024</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="kjwrap tg-article-item">
+              <div class="tg-media">
+                <a
+                  class="d-block"
+                  href="features/special-features/the-revolution-in-puncture-resistant-tires-never-flat-out.html"
+                >
+                  <img
+                    src="uploads/Featuresthumb/Image/featuresthumb_the_revolution_in_puncture-resistant_tires_never_flat_out1724759517.jpg"
+                    alt="The Revolution In Puncture-resistant Tires Never Flat Out"
+                  />
+                </a>
+              </div>
+              <div class="tg-txt">
+                <a class="tg-review-tag" href="features/special-features.html"
+                  >SPECIAL FEATURES</a
+                >
+                <h2 class="tg-review-title">
+                  <a
+                    href="features/special-features/the-revolution-in-puncture-resistant-tires-never-flat-out.html"
+                    >The Revolution in Puncture-Resistant Tires | Never Flat
+                    Out...</a
+                  >
+                </h2>
+                <span class="tg-tooltip"
+                  >The Revolution in Puncture-Resistant Tires | Never Flat
+                  Out</span
+                >
+                <span class="tg-author"
+                  ><a href="author/Vipul%20Punetha.html">Vipul Punetha</a></span
+                >
+                -
+                <span class="tg-article-date">August 27, 2024</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="kjwrap tg-article-item">
+              <div class="tg-media">
+                <a
+                  class="d-block"
+                  href="features/special-features/what-a-joke-force-gurkha-3-door.html"
+                >
+                  <img
+                    src="uploads/Featuresthumb/Image/featuresthumb_what_a_joke_force_gurkha_3-door1723884810.jpg"
+                    alt="What A Joke Force Gurkha 3-door"
+                  />
+                </a>
+              </div>
+              <div class="tg-txt">
+                <a class="tg-review-tag" href="features/special-features.html"
+                  >SPECIAL FEATURES</a
+                >
+                <h2 class="tg-review-title">
+                  <a
+                    href="features/special-features/what-a-joke-force-gurkha-3-door.html"
+                    >What A Joke | Force Gurkha 3-Door...</a
+                  >
+                </h2>
+                <span class="tg-tooltip"
+                  >What A Joke | Force Gurkha 3-Door</span
+                >
+                <span class="tg-author"
+                  ><a href="author/Vipul%20Punetha.html">Vipul Punetha</a></span
+                >
+                -
+                <span class="tg-article-date">August 17, 2024</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="kjwrap tg-article-item">
+              <div class="tg-media">
+                <a
+                  class="d-block"
+                  href="features/tg-explains/top-reasons-why-the-bolero-neo-is-perfect-for-both-city-and-off-road-driving.html"
+                >
+                  <img
+                    src="uploads/Featuresthumb/Image/featuresthumb_top_reasons_why_the_bolero_neo_is_perfect_for_both_city_and_off-road_driving1722859738.png"
+                    alt="Top Reasons Why The Bolero Neo Is Perfect For Both City And Off-road Driving"
+                  />
+                </a>
+              </div>
+              <div class="tg-txt">
+                <a class="tg-review-tag" href="features/tg-explains.html"
+                  >TG EXPLAINS</a
+                >
+                <h2 class="tg-review-title">
+                  <a
+                    href="features/tg-explains/top-reasons-why-the-bolero-neo-is-perfect-for-both-city-and-off-road-driving.html"
+                    >Top Reasons Why the Bolero Neo is Perfect for Both City and
+                    Off-R...</a
+                  >
+                </h2>
+                <span class="tg-tooltip"
+                  >Top Reasons Why the Bolero Neo is Perfect for Both City and
+                  Off-Road Driving</span
+                >
+                <span class="tg-author"
+                  ><a href="author/TopGear%20Staff.html">TopGear Staff</a></span
+                >
+                -
+                <span class="tg-article-date">August 5, 2024</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="kjwrap tg-article-item">
+              <div class="tg-media">
+                <a
+                  class="d-block"
+                  href="features/tg-explains/a-buyers-guide-to-making-your-first-car-purchase.html"
+                >
+                  <img
+                    src="uploads/Featuresthumb/Image/featuresthumb_a_buyers_guide_to_making_your_first_car_purchase1722919903.jpg"
+                    alt="A Buyers Guide To Making Your First Car Purchase"
+                  />
+                </a>
+              </div>
+              <div class="tg-txt">
+                <a class="tg-review-tag" href="features/tg-explains.html"
+                  >TG EXPLAINS</a
+                >
+                <h2 class="tg-review-title">
+                  <a
+                    href="features/tg-explains/a-buyers-guide-to-making-your-first-car-purchase.html"
+                    >A Buyer&#039;s Guide to Making Your First Car
+                    Purchase...</a
+                  >
+                </h2>
+                <span class="tg-tooltip"
+                  >A Buyer&#039;s Guide to Making Your First Car Purchase</span
+                >
+                <span class="tg-author"
+                  ><a href="author/TopGear%20Staff.html">TopGear Staff</a></span
+                >
+                -
+                <span class="tg-article-date">August 5, 2024</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="kjwrap tg-article-item">
+              <div class="tg-media">
+                <a
+                  class="d-block"
+                  href="features/tg-explains/comparing-the-mahindra-bolero-to-its-rivals-what-sets-it-apart.html"
+                >
+                  <img
+                    src="uploads/Featuresthumb/Image/featuresthumb_comparing_the_mahindra_bolero_to_its_rivals_what_sets_it_apart1722920597.png"
+                    alt="Comparing The Mahindra Bolero To Its Rivals What Sets It Apart"
+                  />
+                </a>
+              </div>
+              <div class="tg-txt">
+                <a class="tg-review-tag" href="features/tg-explains.html"
+                  >TG EXPLAINS</a
+                >
+                <h2 class="tg-review-title">
+                  <a
+                    href="features/tg-explains/comparing-the-mahindra-bolero-to-its-rivals-what-sets-it-apart.html"
+                    >Comparing the Mahindra Bolero to Its Rivals: What Sets It
+                    Apart...</a
+                  >
+                </h2>
+                <span class="tg-tooltip"
+                  >Comparing the Mahindra Bolero to Its Rivals: What Sets It
+                  Apart</span
+                >
+                <span class="tg-author"
+                  ><a href="author/TopGear%20Staff.html">TopGear Staff</a></span
+                >
+                -
+                <span class="tg-article-date">August 5, 2024</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="tg-newsletter-box" class="my-5">
+      <div class="container">
+        <div class="kjnewsletter">
+          <div class="tg-newsletter-wrap">
+            <div class="newsletter-header">
+              <h2 class="tg-title">Top Gear<br />Newsletter</h2>
+              <p>
+                Stay up to date with all our latest content, news reports and
+                reviews by subscribing to our newsletter! <br />PS: We don't
+                intend to sell your data to the highest bidder...
+              </p>
+            </div>
+            <div class="newsletter-form">
+              <div
+                id="mlb2-2028988"
+                class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-2028988"
+              >
+                <div class="ml-form-align-center">
+                  <div class="ml-form-embedWrapper embedForm">
+                    <div
+                      class="ml-form-embedBody ml-form-embedBodyDefault row-form"
+                    >
+                      <div
+                        class="ml-form-embedContent"
+                        style="margin-bottom: 0"
+                      ></div>
+                      <form class="ml-block-form tg-newsletter">
+                        <div class="ml-form-formContent">
+                          <div class="ml-form-fieldRow">
+                            <div
+                              class="ml-field-group ml-field-name ml-validate-required"
+                            >
+                              <label class="d-none">Name</label>
+                              <input
+                                aria-label="name"
+                                aria-required="true"
+                                type="text"
+                                class="form-control"
+                                data-inputmask=""
+                                name="fields[name]"
+                                placeholder="Your Name"
+                                autocomplete="name"
+                              />
+                            </div>
+                          </div>
+                          <div class="ml-form-fieldRow">
+                            <div
+                              class="ml-field-group ml-field-email ml-validate-email ml-validate-required"
+                            >
+                              <label class="d-none">Email</label>
+                              <input
+                                aria-label="email"
+                                aria-required="true"
+                                type="email"
+                                class="form-control"
+                                data-inputmask=""
+                                name="fields[email]"
+                                placeholder="Your Email"
+                                autocomplete="email"
+                              />
+                            </div>
+                          </div>
+                          <div class="ml-form-fieldRow ml-last-item">
+                            <div class="ml-field-group ml-field-company">
+                              <label class="d-none"
+                                >What's in your garage</label
+                              >
+                              <input
+                                aria-label="company"
+                                type="text"
+                                class="form-control"
+                                data-inputmask=""
+                                name="fields[company]"
+                                placeholder="What's in your garage"
+                                autocomplete=""
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <input type="hidden" name="ml-submit" value="1" />
+                        <div class="ml-form-embedSubmit">
+                          <button type="submit" class="tg-btn primary">
+                            SUBSCRIBE
+                          </button>
+                          <button
+                            disabled="disabled"
+                            style="display: none"
+                            type="button"
+                            class="loading"
+                          >
+                            <div class="ml-form-embedSubmitLoad"></div>
+                            <span class="sr-only">Loading...</span>
+                          </button>
+                        </div>
+                        <input type="hidden" name="anticsrf" value="true" />
+                      </form>
+                    </div>
+                    <div
+                      class="ml-form-successBody row-success"
+                      style="display: none"
+                    >
+                      <div class="ml-form-successContent">
+                        <h4>Thank you for Subscribing</h4>
+                        <p>You have successfully joined our subscriber list.</p>
+                        <p>
+                          <span style="font-size: 16px"
+                            >Welcome to BBC TopGear India!</span
+                          >
+                        </p>
+                        <p></p>
+                        <p><strong></strong></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer id="footer">
+      <div class="container">
+        <div class="footer-logo">
+          <img
+            src="/www.topgearmag.in/assets/imgs/tg-logo-black.png"
+            width="250"
+          />
+        </div>
+        <div class="tg-links-wrap mb-4">
+          <span class="tg-link"><a href="#">Contact Us</a></span>
+          <span class="tg-link"><a href="#">Terms and Conditions</a></span>
+          <span class="tg-link"><a href="#">Career</a></span>
+          <span class="tg-link"><a href="#">About Us</a></span>
+        </div>
+        <hr />
+
+        <div class="container-fluid tg-bottom">
+          <div class="row footer-bottom">
+            <div class="col-md-9">
+              <p class="mb-1 mt-2">
+                &copy 2024 TurboTales | All rights reserved
+              </p>
+            </div>
+            <div class="col-md-3 tg-social">
+              <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const loadVideo = (iframe) => {
+        const cid = "UCzt-MrR91HgnZCvypAaV1uA";
+        const channelURL = encodeURIComponent(
+          `https://www.youtube.com/feeds/videos.xml?channel_id=${cid}`
+        );
+        const reqURL = `https://api.rss2json.com/v1/api.json?rss_url=${channelURL}`;
+
+        fetch(reqURL)
+          .then((response) => response.json())
+          .then((result) => {
+            console.log(result);
+            const videoNumber = iframe.getAttribute("kjnum");
+            const link = result.items[videoNumber].link;
+            const id = link.substr(link.indexOf("=") + 1);
+            iframe.setAttribute(
+              "src",
+              `https://youtube.com/embed/${id}?controls=0&autoplay=1`
+            );
+          })
+          .catch((error) => console.log("error", error));
+      };
+
+      const iframes = document.getElementsByClassName("latestVideoEmbed");
+      for (let i = 0, len = iframes.length; i < len; i++) {
+        loadVideo(iframes[i]);
+      }
+    </script>
+
+    <!-- resources/views/layouts/footer.blade.php -->
+  </body>
+</html>
